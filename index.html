@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Simulasi Balap Mobil</title>
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="style.css"
+  >
+
+  <!-- P5.JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js">
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="canvas-container"></div>
+
+    <div class="controls">
+
+      <button
+        onclick="startRace()"
+        class="btn-start"
+      >
+        ▶ MULAI BALAP
+      </button>
+
+      <button
+        onclick="resetRace()"
+        class="btn-reset"
+      >
+        ↻ RESET
+      </button>
+
+    </div>
+
+    <div class="info">
+
+      <h2>SIMULASI BALAP MOBIL</h2>
+
+      <p>
+        Panjang lintasan:
+        <strong>10 KM</strong>
+      </p>
+
+      <div class="cars-info">
+
+        <div>
+          🚗 Mobil A
+          <span>10 KM/JAM</span>
+        </div>
+
+        <div>
+          🚗 Mobil B
+          <span>90 KM/JAM</span>
+        </div>
+
+        <div>
+          🚗 Mobil C
+          <span>80 KM/JAM</span>
+        </div>
+
+        <div>
+          🚗 Mobil D
+          <span>70 KM/JAM</span>
+        </div>
+
+      </div>
+
+      <p class="keyboard">
+        SPACE = Mulai &nbsp; | &nbsp;
+        R = Reset
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>

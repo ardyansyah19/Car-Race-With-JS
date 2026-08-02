@@ -1,0 +1,275 @@
+/* ========================================
+   SIMULASI BALAP MOBIL
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100%;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #111;
+
+  color: white;
+}
+
+
+/* ========================================
+   CONTAINER
+   ======================================== */
+
+.container {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  padding: 20px;
+}
+
+
+/* ========================================
+   CANVAS
+   ======================================== */
+
+#canvas-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+
+/* Canvas p5.js */
+
+canvas {
+
+  display: block;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ========================================
+   CONTROL BUTTON
+   ======================================== */
+
+.controls {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+
+button {
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding:
+    12px 25px;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+
+button:hover {
+
+  transform:
+    translateY(-2px);
+
+  opacity: 0.9;
+}
+
+
+/* Tombol mulai */
+
+.btn-start {
+
+  background: #22c55e;
+
+  color: white;
+}
+
+
+/* Tombol reset */
+
+.btn-reset {
+
+  background: #ef4444;
+
+  color: white;
+}
+
+
+/* ========================================
+   INFORMATION PANEL
+   ======================================== */
+
+.info {
+
+  width: 453px;
+
+  max-width: 100%;
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  background: #1d1d1d;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+.info h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 12px;
+
+  text-align: center;
+
+  font-size: 20px;
+}
+
+
+.info p {
+
+  text-align: center;
+
+  color: #ccc;
+
+  margin: 8px 0;
+}
+
+
+/* ========================================
+   INFORMASI MOBIL
+   ======================================== */
+
+.cars-info {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+
+.cars-info div {
+
+  background: #292929;
+
+  border-radius: 7px;
+
+  padding: 10px;
+
+  font-size: 13px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.cars-info span {
+
+  color: #aaa;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   KEYBOARD
+   ======================================== */
+
+.keyboard {
+
+  font-size: 11px !important;
+
+  color: #777 !important;
+
+  margin-top: 15px !important;
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 500px) {
+
+  .container {
+
+    padding: 10px;
+  }
+
+  canvas {
+
+    width: 100% !important;
+
+    height: auto !important;
+  }
+
+  .info {
+
+    width: 100%;
+  }
+
+  .cars-info {
+
+    grid-template-columns:
+      1fr;
+  }
+
+}
